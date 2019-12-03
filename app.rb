@@ -18,3 +18,12 @@ end
 get '/contacts' do
 	erb :contacts
 end
+
+post '/visit' do
+	@username = params[:username]
+	@phone = params[:phone]
+	@datetime = params[:date_time]
+	users = File.open("./public/users.txt", "a")
+	users.write("\nИмя: #{@username}\nТелефон: #{@phone}\nДата и время: #{@date_time}\n")
+	users.close
+end
