@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2>Text file:</h2>
+	<%@logfile = File.open("/users.txt", "r")%>
+	<% @logfile.each_line do |line| %>
+  		<%= line %>
+	<% end %>
+	<%file.close%>
+</body>
+</html>
+
+

@@ -22,7 +22,17 @@
     <input name="date_time" type="text" class="form-control" placeholder="Введите дату и время">  
   </div> 
 
-  
+
+<form action="/visit" method="POST">
+   <div class="form-group">
+    <label for="exampleFormControlSelect1">Выберете мастера</label>
+    <select name="barber" class="form-control" id="exampleFormControlSelect1">
+      <option>Walter White</option>
+      <option>Jessie Pinkman</option>
+      <option>Gus Fring</option>
+    </select>
+  </div>  
+
   <button type="submit" class="btn btn-primary">Записаться</button>
 
 </form>
